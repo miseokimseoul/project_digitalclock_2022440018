@@ -1,12 +1,9 @@
-## Clock Signal
 set_property PACKAGE_PIN B6 [get_ports clk_1k]
 set_property IOSTANDARD LVCMOS33 [get_ports clk_1k]
 
-## Reset (Active Low)
 set_property PACKAGE_PIN Y1 [get_ports clr_sw_n]
 set_property IOSTANDARD LVCMOS33 [get_ports clr_sw_n]
 
-## Mode Switches (DIP 2, 3, 4)
 set_property PACKAGE_PIN W3 [get_ports alarm_sw]
 set_property IOSTANDARD LVCMOS33 [get_ports alarm_sw]
 
@@ -16,7 +13,6 @@ set_property IOSTANDARD LVCMOS33 [get_ports stopwatch_sw]
 set_property PACKAGE_PIN T1 [get_ports timer_sw]
 set_property IOSTANDARD LVCMOS33 [get_ports timer_sw]
 
-## Buttons (SM_1 ~ SM_9) -> btn[0] ~ btn[8]
 set_property IOSTANDARD LVCMOS33 [get_ports {btn[*]}]
 set_property PACKAGE_PIN K4 [get_ports {btn[0]}]
 set_property PACKAGE_PIN N8 [get_ports {btn[1]}]
@@ -28,7 +24,6 @@ set_property PACKAGE_PIN L5 [get_ports {btn[6]}]
 set_property PACKAGE_PIN J2 [get_ports {btn[7]}]
 set_property PACKAGE_PIN K2 [get_ports {btn[8]}]
 
-## Text LCD Control
 set_property PACKAGE_PIN A6 [get_ports lcd_e]
 set_property PACKAGE_PIN G6 [get_ports lcd_rs]
 set_property PACKAGE_PIN D6 [get_ports lcd_rw]
@@ -36,7 +31,6 @@ set_property IOSTANDARD LVCMOS33 [get_ports lcd_e]
 set_property IOSTANDARD LVCMOS33 [get_ports lcd_rs]
 set_property IOSTANDARD LVCMOS33 [get_ports lcd_rw]
 
-## Text LCD Data (8-bit)
 set_property IOSTANDARD LVCMOS33 [get_ports {lcd_data[*]}]
 set_property PACKAGE_PIN A4 [get_ports {lcd_data[0]}]
 set_property PACKAGE_PIN B2 [get_ports {lcd_data[1]}]
@@ -47,7 +41,6 @@ set_property PACKAGE_PIN C5 [get_ports {lcd_data[5]}]
 set_property PACKAGE_PIN C1 [get_ports {lcd_data[6]}]
 set_property PACKAGE_PIN D1 [get_ports {lcd_data[7]}]
 
-## 7-Segment Selection (Active Low)
 set_property IOSTANDARD LVCMOS33 [get_ports {seg_sel[*]}]
 set_property PACKAGE_PIN K1 [get_ports {seg_sel[0]}]
 set_property PACKAGE_PIN L6 [get_ports {seg_sel[1]}]
@@ -58,7 +51,6 @@ set_property PACKAGE_PIN H4 [get_ports {seg_sel[5]}]
 set_property PACKAGE_PIN K3 [get_ports {seg_sel[6]}]
 set_property PACKAGE_PIN K5 [get_ports {seg_sel[7]}]
 
-## 7-Segment Data (Active High)
 set_property IOSTANDARD LVCMOS33 [get_ports {seg_data[*]}]
 set_property PACKAGE_PIN F1 [get_ports {seg_data[0]}]
 set_property PACKAGE_PIN F5 [get_ports {seg_data[1]}]
@@ -69,11 +61,9 @@ set_property PACKAGE_PIN J3 [get_ports {seg_data[5]}]
 set_property PACKAGE_PIN J7 [get_ports {seg_data[6]}]
 set_property PACKAGE_PIN H2 [get_ports {seg_data[7]}]
 
-## Piezo Buzzer
 set_property PACKAGE_PIN Y21 [get_ports piezo]
 set_property IOSTANDARD LVCMOS33 [get_ports piezo]
 
-## Single LEDs (8-bit)
 set_property IOSTANDARD LVCMOS33 [get_ports {led_1[*]}]
 set_property PACKAGE_PIN L4 [get_ports {led_1[0]}]
 set_property PACKAGE_PIN M4 [get_ports {led_1[1]}]
@@ -84,7 +74,6 @@ set_property PACKAGE_PIN M3 [get_ports {led_1[5]}]
 set_property PACKAGE_PIN M1 [get_ports {led_1[6]}]
 set_property PACKAGE_PIN N5 [get_ports {led_1[7]}]
 
-## RGB LEDs (4 sets wired together)
 set_property IOSTANDARD LVCMOS33 [get_ports {led_r[*]}]
 set_property PACKAGE_PIN T2 [get_ports {led_r[0]}]
 set_property PACKAGE_PIN U1 [get_ports {led_r[1]}]
@@ -101,4 +90,5 @@ set_property IOSTANDARD LVCMOS33 [get_ports {led_b[*]}]
 set_property PACKAGE_PIN U3 [get_ports {led_b[0]}]
 set_property PACKAGE_PIN W2 [get_ports {led_b[1]}]
 set_property PACKAGE_PIN R5 [get_ports {led_b[2]}]
+
 set_property PACKAGE_PIN T3 [get_ports {led_b[3]}]
